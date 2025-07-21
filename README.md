@@ -114,8 +114,6 @@ https://youtube.com/shorts/E0jw0PagxaY
 - Doosan Robotics m0609, OnRobot RG2 Gripper
 ### **SBC**
 - Raspberrypi4 4gb
-### **LCD**
-- LCD
 
 &nbsp;
 
