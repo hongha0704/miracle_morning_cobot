@@ -54,7 +54,8 @@ https://youtube.com/shorts/E0jw0PagxaY
 #### [5. 🤖 Hardware](#5--hardware-1)   
 #### [6. 🎬 System Flow](#6--system-flow-1)   
 #### [7. 🛠️ Node Architecture](#7-%EF%B8%8F-node-architecture-1)   
-#### [8. 🔍 프로젝트 기대효과](#8--프로젝트-기대효과-1)   
+#### [8. ✨ 주요 기능](#8--주요-기능-1)   
+#### [9. 🔍 프로젝트 기대효과](#9--프로젝트-기대효과-1)   
 
 ---
 
@@ -128,7 +129,17 @@ https://youtube.com/shorts/E0jw0PagxaY
 
 &nbsp;
 
-## 8. 🔍 프로젝트 기대효과
+## 8. ✨ 주요 기능
+
+### 1. 수납 알고리즘 시작
+- Check Force condition으로 외력이 감지될 때까지 대기
+- y축 외력이 감지되면 수납 알고리즘 시작   
+<img src="https://github.com/user-attachments/assets/4fd9eb2e-5751-4213-98b0-5f124727f209" width="50%" height="50%" title="px(픽셀) 크기 설정" alt="image"></img>
+<img src="https://github.com/user-attachments/assets/18eb697e-e85a-4368-b787-74f352cf7a8d" width="50%" height="50%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+
+## 9. 🔍 프로젝트 기대효과
 ### **활용 방안**
 - 각 가정에 출퇴근 과정에서 정리도우미
 - 공장/창고/편의점에서 물품 정리 도우미
