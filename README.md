@@ -134,7 +134,7 @@ https://youtube.com/shorts/E0jw0PagxaY
 ### 1. 수납 알고리즘 시작
 - Check Force condition으로 외력이 감지될 때까지 대기
 - y축 외력이 감지되면 수납 알고리즘 시작   
-<img src="https://github.com/user-attachments/assets/4fd9eb2e-5751-4213-98b0-5f124727f209" width="30%" height="30%" title="px(픽셀) 크기 설정" alt="image"></img>
+<img src="https://github.com/user-attachments/assets/4fd9eb2e-5751-4213-98b0-5f124727f209" width="28%" height="28%" title="px(픽셀) 크기 설정" alt="image"></img>
 <img src="https://github.com/user-attachments/assets/18eb697e-e85a-4368-b787-74f352cf7a8d" width="50%" height="50%" title="px(픽셀) 크기 설정" alt="image"></img>
 
 &nbsp;
