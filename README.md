@@ -131,11 +131,64 @@ https://youtube.com/shorts/E0jw0PagxaY
 
 ## 8. ✨ 주요 기능
 
-### 1. 수납 알고리즘 시작
-- Check Force condition으로 외력이 감지될 때까지 대기
+### 1. 물품 수납 알고리즘 시작
+- ```check_force_condition``` 활용 외력이 감지될 때까지 대기
 - y축 외력이 감지되면 수납 알고리즘 시작   
 <img src="https://github.com/user-attachments/assets/4fd9eb2e-5751-4213-98b0-5f124727f209" width="28%" height="28%" title="px(픽셀) 크기 설정" alt="image"></img>
 <img src="https://github.com/user-attachments/assets/18eb697e-e85a-4368-b787-74f352cf7a8d" width="50%" height="50%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 2. 인사 모션
+- ```move_periodic``` 활용하여 인사 모션   
+<img src="https://github.com/user-attachments/assets/04d80b03-0a68-4760-9fdf-88c76cbe7c81" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 3. 물품 탐색   
+- user input으로 수납하고자 하는 물품과 선반 위치 입력   
+- 입력 후 로봇이 ㄹ자로 책상 탐색   
+<img src="https://github.com/user-attachments/assets/17611c5a-923a-4fe8-b027-9225cedc4bf2" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 4. 물품 종류 파악 및 pick
+- 비동기로 책상의 물품 탐색 중 ```get_tool_force``` 활용 외력 감지 -> 물체 존재 파악   
+<img src="https://github.com/user-attachments/assets/53973f6c-8a5f-4df5-a81f-0808f3ff915e" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+- 순응제어 활용 z축 높이 파악 -> 물체 분류 (height_dict에 있는 물체 높이와 z축 높이 비교 ) -> pick   
+<img src="https://github.com/user-attachments/assets/3c9395a4-4f9f-4ba9-ab83-b7ef12f9a407" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 5. 사용자 입력 위치에 물품 유무 확인 후 해당 위치에 물품 수납
+- 해당 위치에 물건이 없을 경우 수납   
+<img src="https://github.com/user-attachments/assets/d3f7afdd-6f76-46d7-ba5d-91c631a965c3" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+- 해당 위치에 이미 물건이 수납된 경우, 해당 위치 옆 지점에 수납   
+<img src="https://github.com/user-attachments/assets/9f48970e-fa56-41be-828c-0ae0f644b176" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 6. 물품 꺼내기 알고리즘 시작
+- ```check_force_condition``` 활용 외력이 감지될 때까지 대기
+- x축 외력이 감지되면 수납 알고리즘 시작   
+<img src="https://github.com/user-attachments/assets/4fd9eb2e-5751-4213-98b0-5f124727f209" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+<img src="https://github.com/user-attachments/assets/81790e04-6f9c-4fc7-8a66-88df4d4c15cd" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 7. 인사 모션
+- ```move_periodic``` 활용하여 인사 모션   
+<img src="https://github.com/user-attachments/assets/b70eb422-1c62-4239-b25b-7cdf5aa2b4a8" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 8. 물품 꺼내기   
+- user input으로 꺼내고자 하는 물품과 선반 위치 입력   
+- 적재된 물품 및 위치 == 입력 물품 및 위치일 때, 해당 위치로 이동   
+- 같지 않을 경우 동작 수행 안함
+- 순응제어로 물품의 높이 측정 후 그리퍼 open 후 pick   
+<img src="https://github.com/user-attachments/assets/32925189-2c85-4aed-9569-3585a83678a2" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+<img src="https://github.com/user-attachments/assets/309a67fd-9c0f-4a86-9bf9-6e8b8b17846c" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+<img src="https://github.com/user-attachments/assets/f3187b11-0438-4e0f-8fb7-c97df229d874" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+
+&nbsp;
+### 9. 책상에 물품 place   
+- 입력한 물품을 차례대로 책상에 place   
+<img src="https://github.com/user-attachments/assets/13471782-e57e-4110-8f70-85ec9f55820d" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
+<img src="https://github.com/user-attachments/assets/46fed277-4ebf-4568-8138-b54fb586ee4a" width="25%" height="25%" title="px(픽셀) 크기 설정" alt="image"></img>
 
 &nbsp;
 
